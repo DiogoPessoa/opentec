@@ -116,7 +116,7 @@ Vamos ver alguns comandos do Zypper para se familiarizar com a linha de comando 
 No openSUSE você pode fazer um **rollback** (reverte mudanças do sistema para um estado anterior) caso alguma atualização quebre o sistema, por exemplo. Para a mágica acontecer, a partição raiz “/” deve ter sido criada em BTRFS com espaço acima de 16 GB durante a instalação do sistema. 
 Caso você utilize EXT4 na raiz, por exemplo, não será possível usufruir do rollback com o Snapper. Isso não se aplica a Home, que pode ser em EXT4, XFS, BTRFS etc.  
 
-No link a seguir você poderá ver uma demonstração detalhada de como fazer um rollback: [https://fastoslinux.com/2019/11/26/rollback-btrfs-no-opensuse/]
+No link a seguir você poderá ver uma demonstração detalhada de como fazer um rollback: [fastoslinux.com](https://fastoslinux.com/2019/11/26/rollback-btrfs-no-opensuse/)
 ### “Bem-vindo”
 Leia o “Bem-vindo” do openSUSE!
 Nele você encontrará algumas dicas que já mostrei aqui, como também, orientações de como instalar drivers da Nvidia, documentação de uso, links das comunidades de usuários e mais repositórios de software. Enfim, aproveite ao máximo o que o openSUSE tem à oferecer e se envolva!
