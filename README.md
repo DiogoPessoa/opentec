@@ -124,18 +124,18 @@ Nele você encontrará algumas dicas que já mostrei aqui, como também, orienta
 Eu sou apenas um usuário relativamente novo do openSUSE com a intenção de facilitar a transição de novos usuários. 
 ### Referências
 - Documentação
-https://pt.opensuse.org/Portal:Documentacao
+[https://pt.opensuse.org/Portal:Documentacao]
 - Codecs do Packman
-https://pt.opensuse.org/SDB:Instalar_codecs_do_Packman
+[https://pt.opensuse.org/SDB:Instalar_codecs_do_Packman]
 - opi/openSUSE
-https://github.com/openSUSE/opi
+[https://github.com/openSUSE/opi]
 - Zypper/Uso
-https://pt.opensuse.org/Zypper/Uso 
+[https://pt.opensuse.org/Zypper/Uso] 
 - Snapper
-https://en.opensuse.org/openSUSE:Snapper_Tutorial
+[https://en.opensuse.org/openSUSE:Snapper_Tutorial]
 - Flathub
-https://flathub.org/home
+[https://flathub.org/home]
 - Grupo no Telegram #openSUSE Brasil
-https://t.me/opensusebr
+[https://t.me/opensusebr]
 
 
