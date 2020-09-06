@@ -37,17 +37,20 @@ $ sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
 ```sh
 $ sudo zypper in google-chrome-stable
 ```
+
 ### Instalar MS Truetype fonts
 Para trabalhos acadêmicos que exigem as normas ABNT, as fontes padronizadas são a Arial ou Times New Roman. Se caso precisar dessas fontes, instale assim:
 No terminal:
 ```sh
 $ sudo zypper install fetchmsttfonts
 ```
+
 ### Descompactador de arquivos 
 No terminal:
 ```sh
 sudo zypper install unrar
 ```
+
 ### Instalar Java JRE
 No terminal:
 ```sh
@@ -57,6 +60,7 @@ Veja a versão do instalada abrindo o terminal e digite:
 ```sh 
 $ java -version
 ```
+
 ### Suíte de escritório para desktop
 O LibreOffice é uma suíte de escritório completa de código aberto compatível com o MS Office. Ele está presente na maioria das Distros Linux, inclusive no openSUSE. 
 Abaixo eu cito mais três excelentes alternativas gratuitas. Caso queira instalar algum,  baixe o arquivo **.rpm** que é o pacote de instalação do openSUSE:
@@ -82,9 +86,9 @@ Caso o software que você procura não esteja nos repositórios do sistema, voc�
 Habilitando o Flathub teremos softwares de terceiros com formato [FLATPAK](https://www.flatpak.org/) disponíveis para instalar, como: Spotify, XMind, Zoom, Steam e outros. 
 Flatpak é um formato de empacotamento e distribuição de softwares em sandbox para Linux.
 * Habilite para o Plasma Discover
-    - Abra: Discover → Configuração → Adicionar Flathub
+    * Abra: Discover → Configuração → Adicionar Flathub
 * Habilite para o GNOME Software
-    - Abra: GNOME Software → Instalados → Programas → e marque a caixa de seleção “Suporte a flatpak”.
+    * Abra: GNOME Software → Instalados → Programas → e marque a caixa de seleção “Suporte a flatpak”.
 ##### Resolução de problema para ativar o Flathub
 Caso você tenha problema durante o processo de habilitar o Flathub, provavelmente a solução está a seguir:
 No terminal
@@ -92,6 +96,7 @@ No terminal
 sudo rm -rf /var/lib/flatpak/repo
 ```
 Agora tente adicionar novamente o Flathub.
+
 ### Destaques do openSUSE
 #### YaST 
 É a ferramenta para administração do sistema e se destaca por sua facilidade de uso, possibilitando instalar e customizar rapidamente o sistema com alguns cliques.
@@ -105,37 +110,40 @@ Algumas funções:
 É um poderoso gerenciador de pacotes de linha de comando. 
 Vamos ver alguns comandos do Zypper para se familiarizar com a linha de comando no terminal:
 | comando | descrição |
-| -------| --------- |
+| ------- | --------- |
 | $ sudo zypper refresh | atualiza os repositórios |
 | $ sudo zypper update | (execute no Leap) instala as atualizações |
-| sudo zypper dup | (execute no Tumbleweed) instala as atualizações |
-| sudo zypper install NOME | instala o pacote |
-| sudo zypper remove NOME | remove o pacote |
-| sudo zypper repos | lista todos os repositórios |
+| $ sudo zypper dup | (execute no Tumbleweed) instala as atualizações |
+| $ sudo zypper install NOME | instala o pacote |
+| $ sudo zypper remove NOME | remove o pacote |
+| $ sudo zypper repos | lista todos os repositórios |
 #### Snapper + BTRFS = rollback 😍
 No openSUSE você pode fazer um **rollback** (reverte mudanças do sistema para um estado anterior) caso alguma atualização quebre o sistema, por exemplo. Para a mágica acontecer, a partição raiz “/” deve ter sido criada em BTRFS com espaço acima de 16 GB durante a instalação do sistema. 
 Caso você utilize EXT4 na raiz, por exemplo, não será possível usufruir do rollback com o Snapper. Isso não se aplica a Home, que pode ser em EXT4, XFS, BTRFS etc.  
 
 No link a seguir você poderá ver uma demonstração detalhada de como fazer um rollback: [fastoslinux.com](https://fastoslinux.com/2019/11/26/rollback-btrfs-no-opensuse/)
-### “Bem-vindo”
+
+### ''Bem-vindo''
 Leia o “Bem-vindo” do openSUSE!
 Nele você encontrará algumas dicas que já mostrei aqui, como também, orientações de como instalar drivers da Nvidia, documentação de uso, links das comunidades de usuários e mais repositórios de software. Enfim, aproveite ao máximo o que o openSUSE tem à oferecer e se envolva!
+
 ### Notas
 Eu sou apenas um usuário relativamente novo do openSUSE com a intenção de facilitar a transição de novos usuários. 
+
 ### Referências
-- Documentação
+* Documentação
 [https://pt.opensuse.org/Portal:Documentacao]
-- Codecs do Packman
+* Codecs do Packman
 [https://pt.opensuse.org/SDB:Instalar_codecs_do_Packman]
-- opi/openSUSE
+* opi/openSUSE
 [https://github.com/openSUSE/opi]
-- Zypper/Uso
+* Zypper/Uso
 [https://pt.opensuse.org/Zypper/Uso] 
-- Snapper
+* Snapper
 [https://en.opensuse.org/openSUSE:Snapper_Tutorial]
-- Flathub
+* Flathub
 [https://flathub.org/home]
-- Grupo no Telegram #openSUSE Brasil
+* Grupo no Telegram #openSUSE Brasil
 [https://t.me/opensusebr]
 
 
