@@ -70,11 +70,14 @@ Abaixo eu cito mais três excelentes alternativas gratuitas. Caso queira instala
 [Baixe o WPS Office](https://www.wps.com/pt-BR/office/linux)
 * **FreeOffice**: também tem boa compatibilidade com MS Office, código fechado e é grátis.
 [Baixe o FreeOffice](https://www.freeoffice.com/pt/baixar/aplicativos)
+
 ### Gerenciadores de pacotes
 * **YaST Software** -  é o principal 	gerenciador de pacote do openSUSE
 * **Discover** - vem por padrão no openSUSE Plasma
 * **GNOME Software** - vem por padrão no GNOME
+
 Os gerenciadores de pacotes do openSUSE é o lugar mais indicado e confiável para você procurar por softwares.
+
 ### Software da comunidade e de terceiros 
 Caso o software que você procura não esteja nos repositórios do sistema, você pode pesquisar pelos pacotes mantidos pela comunidade, que são construídos no [openSUSE Build Service](https://en.opensuse.org/Portal:Build_Service).
 1. Acesse [https://software.opensuse.org/explore]
@@ -82,6 +85,7 @@ Caso o software que você procura não esteja nos repositórios do sistema, voc�
 3. Clique no software que procura
 4. Role para baixo e verifique se tem o software para a sua versão do openSUSE
 5. Encontrou? Pode clicar em "**1 Click Install**". Esta ação deve abrir o YaST perguntando se você aceita instalar o software.
+
 ### Habilitar o Flathub
 Habilitando o Flathub teremos softwares de terceiros com formato [FLATPAK](https://www.flatpak.org/) disponíveis para instalar, como: Spotify, XMind, Zoom, Steam e outros. 
 Flatpak é um formato de empacotamento e distribuição de softwares em sandbox para Linux.
