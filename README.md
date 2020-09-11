@@ -5,66 +5,76 @@ As instruções que vamos ver a seguir é compatível com as duas versões ofici
 
 ### Instalar codecs multimídia
 A ação a seguir adiciona o repositório **Packman** e instala automaticamente os **codecs** necessários para reprodução de arquivo multimídia.
-##### Para o Leap e Tumbleweed 
-No terminal:
+##### Para o openSUSE Leap e Tumbleweed 
+Abra o terminal (ctrl+alt+T) e digite ou cole o comando abaixo:
 ```sh
-$ sudo zypper install opi
-$ sudo opi codecs
+$ sudo zypper install opi && sudo opi codecs
 ```
 [OPI:](https://github.com/openSUSE/opi) OBS Package Installer
 
 ### Instalar o Chromium ou Google Chrome
-##### Navegador Chromium
-No terminal:
+##### 1. Navegador Chromium
+Instalar com o YaST 1-Click:
+
+* [openSUSE_Tumbleweed_1-Click](https://software.opensuse.org/ymp/openSUSE:Factory/standard/chromium.ymp?base=openSUSE%3AFactory&query=chromium)
+
+* [openSUSE_Leap_15.2_1-Click](https://software.opensuse.org/ymp/openSUSE:Leap:15.2:Update/ports/chromium.ymp?base=openSUSE%3ALeap%3A15.2&query=chromium)
+
+Ou instalar via terminal:
 ```sh
 $ sudo zypper in chromium chromium-ffmpeg-extra
 ```
-##### Navegador Google Chrome
+##### 2. Navegador Google Chrome
 No terminal:
 1. Adicione o repositório
 ```sh
 $ sudo zypper addrepo http://dl.google.com/linux/chrome/rpm/stable/x86_64 Google-Chrome
 ```
-2. Atualize os repositórios
+2. Atualize os repositórios e instale a chave
 ```sh
-$ sudo zypper ref
+$ sudo zypper ref && sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
 ```
-3. Instale a chave pública
-```sh
-$ sudo rpm --import https://dl.google.com/linux/linux_signing_key.pub
-```
-4. Instale o Google Chrome
+3. Instale o Google Chrome
 ```sh
 $ sudo zypper in google-chrome-stable
 ```
 
 ### Instalar MS Truetype fonts
 Para trabalhos acadêmicos que exigem as normas ABNT, as fontes padronizadas são a Arial ou Times New Roman. Se caso precisar dessas fontes, instale assim:
-No terminal:
+
+Instalar com o YaST 1-Click:
+* [openSUSE_Tumbleweed_1-Click](https://software.opensuse.org/ymp/openSUSE:Factory/standard/fetchmsttfonts.ymp?base=openSUSE%3AFactory&query=fetchmsttfonts)
+* [openSUSE_Leap_15.2_1-Click](https://software.opensuse.org/ymp/openSUSE:Leap:15.2/standard/fetchmsttfonts.ymp?base=openSUSE%3ALeap%3A15.2&query=fetchmsttfonts)
+
+Ou instalar via terminal:
 ```sh
 $ sudo zypper install fetchmsttfonts
 ```
 
 ### Descompactador de arquivos 
-No terminal:
+Instalar com o YaST 1-Click:
+* [openSUSE_Tumbleweed_1-Click](https://software.opensuse.org/ymp/openSUSE:Factory/standard/unrar_wrapper.ymp?base=openSUSE%3AFactory&query=unrar_wrapper)
+* [openSUSE_Leap_15.2_1-Click](https://software.opensuse.org/ymp/openSUSE:Leap:15.2/standard/unrar_wrapper.ymp?base=openSUSE%3ALeap%3A15.2&query=unrar_wrapper)
+
+Ou instalar via terminal:
 ```sh
 sudo zypper install unrar
 ```
 
 ### Instalar Java JRE
-No terminal:
+Instalar com o YaST 1-Click:
+* [openSUSE_Tumbleweed_1-Click](https://software.opensuse.org/ymp/openSUSE:Factory/standard/java-1_8_0-openjdk.ymp?base=openSUSE%3AFactory&query=java-1_8_0-openjdk)
+* [openSUSE_Leap_15.2_1-Click](https://software.opensuse.org/ymp/openSUSE:Leap:15.2/standard/java-1_8_0-openjdk.ymp?base=openSUSE%3ALeap%3A15.2&query=java-1_8_0-openjdk)
+
+Ou instalar via terminal:
 ```sh
 sudo zypper in java-1_8_0-openjdk
-```
-Veja a versão do instalada abrindo o terminal e digite:  
-```sh 
-$ java -version
 ```
 
 ### Suíte de escritório para desktop
 O LibreOffice é uma suíte de escritório completa de código aberto compatível com o MS Office. Ele está presente na maioria das Distros Linux, inclusive no openSUSE. 
 Abaixo eu cito mais três excelentes alternativas gratuitas. Caso queira instalar algum,  baixe o arquivo **.rpm** que é o pacote de instalação do openSUSE:
-* **ONLYOFFICE**: totalmente compátivel com os formatos do MS Office, é de código aberto e grátis.
+* **ONLYOFFICE**: totalmente compatível com os formatos do MS Office, é de código aberto e grátis.
 [Baixe o ONLYOFFICE](https://www.onlyoffice.com/pt/download-desktop.aspx)
 * **WPS Office**: tem uma boa compatibilidade com MS Office, é de código fechado e grátis com anúncios.
 [Baixe o WPS Office](https://www.wps.com/pt-BR/office/linux)
@@ -110,9 +120,10 @@ Algumas funções:
 * Formatar e particionar unidades
 * Editar o booting/GRUB
 * Configurar firewall
+
 #### ZYPPER
 É um poderoso gerenciador de pacotes de linha de comando. 
-Vamos ver alguns comandos do Zypper para se familiarizar com a linha de comando no terminal:
+Apenas para demonstração, veremos abaixo alguns comandos do Zypper que podem ser executados no terminal:
 | comando | descrição |
 | ------- | --------- |
 | $ sudo zypper refresh | atualiza os repositórios |
@@ -121,6 +132,9 @@ Vamos ver alguns comandos do Zypper para se familiarizar com a linha de comando 
 | $ sudo zypper install NOME | instala o pacote |
 | $ sudo zypper remove NOME | remove o pacote |
 | $ sudo zypper repos | lista todos os repositórios |
+
+Não curtiu muito a linha de comando? Relaxa! Tudo que foi apresentado acima é perfeitamente realizado graficamente pelos gerenciadores de pacotes.
+
 #### Snapper + BTRFS = rollback 😍
 No openSUSE você pode fazer um **rollback** (reverte mudanças do sistema para um estado anterior) caso alguma atualização quebre o sistema, por exemplo. Para a mágica acontecer, a partição raiz “/” deve ter sido criada em BTRFS com espaço acima de 16 GB durante a instalação do sistema. 
 Caso você utilize EXT4 na raiz, por exemplo, não será possível usufruir do rollback com o Snapper. Isso não se aplica a Home, que pode ser em EXT4, XFS, BTRFS etc.  
