@@ -118,8 +118,8 @@ comando | descrição
 $ sudo zypper refresh | atualiza os repositórios 
 $ sudo zypper update | (execute no Leap) instala as atualizações
 $ sudo zypper dup | (execute no Tumbleweed) instala as atualizações
-$ sudo zypper install NOME | instala o pacote
-$ sudo zypper remove NOME | remove o pacote
+$ sudo zypper install nome-pacote | instala o pacote
+$ sudo zypper remove nome-pacote | remove o pacote
 $ sudo zypper repos | lista todos os repositórios
 ```
 
@@ -130,7 +130,7 @@ No openSUSE você pode fazer um **rollback** (reverte mudanças do sistema para 
 Caso você utilize EXT4 na raiz, por exemplo, não será possível usufruir do rollback com o Snapper. Isso não se aplica a Home, que pode ser em EXT4, XFS, BTRFS etc.  
 
 No link a seguir você poderá ver uma demonstração detalhada de como fazer um rollback: 
-* [Rollback - Btrfs no openSUSE](https://fastoslinux.com/2019/11/26/rollback-btrfs-no-opensuse/)
+* [Rollback Btrfs no openSUSE - Fast OS](https://fastoslinux.com/2019/11/26/rollback-btrfs-no-opensuse/)
 
 ### BEM-VINDO
 Leia o “Bem-vindo” do openSUSE!
