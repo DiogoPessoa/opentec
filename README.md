@@ -86,7 +86,7 @@ Os gerenciadores de pacotes do openSUSE é o lugar mais indicado e confiável pa
 
 ### SOFTWARE DA COMUNIDADE E TERCEIROS 
 Caso o software que você procura não esteja nos repositórios do sistema, você pode pesquisar pelos pacotes mantidos pela comunidade, que são construídos no [openSUSE Build Service](https://en.opensuse.org/Portal:Build_Service).
-1. Acesse [https://software.opensuse.org/explore]
+1. Acesse <https://software.opensuse.org/explore>
 2. Pesquise o software desejado, por exemplo: **opera** (navegador de internet)
 3. Clique no software que procura
 4. Role para baixo e verifique se tem o software para a sua versão do openSUSE
@@ -112,14 +112,16 @@ Algumas funções:
 #### ZYPPER
 É um poderoso gerenciador de pacotes de linha de comando. 
 Apenas para demonstração, veremos abaixo alguns comandos do Zypper que podem ser executados no terminal:
-| comando | descrição |
-| ------- | --------- |
-| $ sudo zypper refresh | atualiza os repositórios |
-| $ sudo zypper update | (execute no Leap) instala as atualizações |
-| $ sudo zypper dup | (execute no Tumbleweed) instala as atualizações |
-| $ sudo zypper install NOME | instala o pacote |
-| $ sudo zypper remove NOME | remove o pacote |
-| $ sudo zypper repos | lista todos os repositórios |
+
+```sh
+comando | descrição 
+$ sudo zypper refresh | atualiza os repositórios 
+$ sudo zypper update | (execute no Leap) instala as atualizações
+$ sudo zypper dup | (execute no Tumbleweed) instala as atualizações
+$ sudo zypper install NOME | instala o pacote
+$ sudo zypper remove NOME | remove o pacote
+$ sudo zypper repos | lista todos os repositórios
+```
 
 Não curtiu muito a linha de comando? Relaxa! Tudo que foi apresentado acima é perfeitamente realizado graficamente pelos gerenciadores de pacotes.
 
@@ -128,7 +130,7 @@ No openSUSE você pode fazer um **rollback** (reverte mudanças do sistema para 
 Caso você utilize EXT4 na raiz, por exemplo, não será possível usufruir do rollback com o Snapper. Isso não se aplica a Home, que pode ser em EXT4, XFS, BTRFS etc.  
 
 No link a seguir você poderá ver uma demonstração detalhada de como fazer um rollback: 
-* [Rollback | Btrfs no openSUSE](https://fastoslinux.com/2019/11/26/rollback-btrfs-no-opensuse/)
+* [Rollback - Btrfs no openSUSE](https://fastoslinux.com/2019/11/26/rollback-btrfs-no-opensuse/)
 
 ### BEM-VINDO
 Leia o “Bem-vindo” do openSUSE!
@@ -142,7 +144,7 @@ Nele, você encontrará algumas dicas que já mostrei aqui, como também, docume
 
 ### REFERÊNCIAS
 * [Documentação](https://pt.opensuse.org/Portal:Documentacao)
-* [odecs do Packman](https://pt.opensuse.org/SDB:Instalar_codecs_do_Packman)
+* [codecs do Packman](https://pt.opensuse.org/SDB:Instalar_codecs_do_Packman)
 * [opi/openSUSE](https://github.com/openSUSE/opi)
 * [Zypper/Uso](https://pt.opensuse.org/Zypper/Uso) 
 * [Snapper](https://en.opensuse.org/openSUSE:Snapper_Tutorial)
