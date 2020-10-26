@@ -10,6 +10,8 @@ Abra o terminal (ctrl+alt+T) e digite ou cole o comando abaixo:
 ```sh
 $ sudo zypper install opi && sudo opi codecs
 ```
+Se for perguntado se você quer rejeitar a chave, confiar temporariamente ou confiar sempre? [r/t/s/?] - responda com a letra: **s** (sempre).
+
 [OPI - OBS Package Installer](https://github.com/openSUSE/opi)
 
 ##### NAVEGADOR CHROMIUM
@@ -96,8 +98,23 @@ Caso o software que você procura não esteja nos repositórios do sistema, voc�
 Habilitando o Flathub teremos softwares de terceiros com formato [FLATPAK](https://www.flatpak.org/) disponíveis para instalar, como: Spotify, XMind, Zoom, Steam e outros. 
 Flatpak é um formato de empacotamento e distribuição de softwares em sandbox para Linux.
 
-* Habilite para o Discover Plasma: Abra o Discover → Configuração → Adicionar Flathub
-* Habilite para o GNOME Software: Abra o GNOME Software → Instalados → Programas → e marque a caixa de seleção “Suporte a flatpak”.
+* Habilite para o Discover Plasma
+
+Abra o Discover → Configuração → Adicionar Flathub
+
+* Habilite para o GNOME Software
+
+Abra o Terminal e cole os comandos abaixo:
+
+Instale o Flatpak
+```sh
+$ sudo zypper install flatpak
+```
+2. Adicione o repositório Flathub
+```sh
+$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+3. Reinicie a máquina para completar a instalação.
 
 ### DESTAQUES DO OPENSUSE
 #### YaST 
